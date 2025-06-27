@@ -1,5 +1,7 @@
 # 🛠️ Pipeline CI/CD Python + Docker avec GitHub Actions
 
+![CI](https://github.com/Hamdoune001/pipeline_ci_cd/actions/workflows/python-app.yml/badge.svg)
+
 Ce projet est un exemple d'intégration continue (CI) simple en Python.  
 Il intègre des tests unitaires, une vérification de qualité du code avec `pylint`, et un build d'image Docker exécutant les tests automatiquement.
 
@@ -27,7 +29,7 @@ Le workflow GitHub Actions effectue automatiquement à chaque `push` :
 ## 🐛 Erreurs rencontrées et solutions
 
 | Erreur | Cause | Solution |
-|-------|-------|----------|
+|--------|-------|----------|
 | `IndentationError` | Mauvaise indentation dans la fonction de test | Corrigé en indentant correctement après `def` |
 | `@stacticmethod` | Faute de frappe (`stacticmethod`) | Corrigé en écrivant `@staticmethod` |
 | `pylint exit code 16` | Manque de docstrings dans les classes/fonctions | Ajout de commentaires de documentation |
@@ -44,5 +46,3 @@ Lorsqu'on exécute le conteneur, les tests unitaires sont automatiquement lancé
 
 ```Dockerfile
 CMD ["python3", "test_simple_math.py"]
-
-![CI](https://github.com/Hamdoune001/pipeline_ci_cd/actions/workflows/python-app.yml/badge.svg)
