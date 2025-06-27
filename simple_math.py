@@ -12,3 +12,4 @@ class SimpleMath:
     def soustraction(a, b):
         """Soustrait b de a."""
         return a - b
+
