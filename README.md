@@ -34,7 +34,6 @@ Le workflow GitHub Actions effectue automatiquement à chaque `push` :
 | `@stacticmethod` | Faute de frappe (`stacticmethod`) | Corrigé en écrivant `@staticmethod` |
 | `pylint exit code 16` | Manque de docstrings dans les classes/fonctions | Ajout de commentaires de documentation |
 | `Trailing newlines` | Trop de lignes vides à la fin du fichier | Supprimées pour satisfaire `pylint` |
-| `git push` erreur d'authentification | GitHub ne supporte plus les mots de passe | Utilisation de HTTPS avec token ou SSH recommandé |
 | `fatal: No configured push destination` | Pas de remote GitHub configuré | Fixé avec `git remote add origin <url>` |
 
 ---
